@@ -1,0 +1,304 @@
+ddls :
+
+
+DROP TABLE IF EXISTS public.crm_events;
+
+CREATE TABLE IF NOT EXISTS public.crm_events
+(
+event_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+event_name character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+"time" character varying(1000) COLLATE pg_catalog."default",
+location character varying(1000) COLLATE pg_catalog."default",
+attendees character varying(1000) COLLATE pg_catalog."default",
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_events
+OWNER to postgres;
+
+-- Table: public.crm_notes
+
+DROP TABLE IF EXISTS public.crm_notes;
+
+CREATE TABLE IF NOT EXISTS public.crm_notes
+(
+note_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+created_by character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+note_content character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_notes
+OWNER to postgres;
+
+-- Table: public.crm_tasks
+
+DROP TABLE IF EXISTS public.crm_tasks;
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks
+(
+task_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+
+mal text file
+lepot
+
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_events
+OWNER to postgres;
+
+-- Table: public.crm_notes
+
+DROP TABLE IF EXISTS public.crm_notes;
+
+CREATE TABLE IF NOT EXISTS public.crm_notes
+(
+note_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+created_by character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+note_content character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_notes
+OWNER to postgres;
+
+-- Table: public.crm_tasks
+
+DROP TABLE IF EXISTS public.crm_tasks;
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks
+(
+task_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+task_name character varying(1000) COLLATE pg_catalog."default",
+assigned_to character varying(1000) COLLATE pg_catalog."default",
+due_date character varying(1000) COLLATE pg_catalog."default",
+status character varying(1000) COLLATE pg_catalog."default",
+priority character varying(1000) COLLATE pg_catalog."default",
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_tasks
+OWNER to postgres;
+
+ormal text file
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks
+(
+        task_id character varying(1000) COLLATE pg_catalog."default",
+        client_id character varying(1000) COLLATE pg_catalog."default",
+        task_name character varying(1000) COLLATE pg_catalog."default",
+        assigned_to character varying(1000) COLLATE pg_catalog."default",
+        due_date character varying(1000) COLLATE pg_catalog."default",
+        status character varying(1000) COLLATE pg_catalog."default",
+        priority character varying(1000) COLLATE pg_catalog."default",
+        description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_tasks
+OWNER to postgres;
+
+-- Table: public.recom_steps
+
+DROP TABLE IF EXISTS public.recom_steps;
+
+CREATE TABLE IF NOT EXISTS public.recom_steps
+(
+        client_id character varying(1000) COLLATE pg_catalog."default",
+        agent character varying(1000) COLLATE pg_catalog."default",
+        last_event_date character varying(1000) COLLATE pg_catalog."default",
+        combined_notes character varying(1000) COLLATE pg_catalog."default",
+        recommended_step character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.recom_steps
+OWNER to postgres;
+
+
+DROP TABLE IF EXISTS public.crm_events_tgt;
+
+CREATE TABLE IF NOT EXISTS public.crm_events_tgt
+(
+event_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+event_name character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+"time" character varying(1000) COLLATE pg_catalog."default",
+location character varying(1000) COLLATE pg_catalog."default",
+attendees character varying(1000) COLLATE pg_catalog."default",
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_events_tgt
+OWNER to postgres;
+
+-- Table: public.crm_notes_tgt
+
+DROP TABLE IF EXISTS public.crm_notes_tgt;
+
+CREATE TABLE IF NOT EXISTS public.crm_notes_tgt
+(
+note_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+created_by character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+note_content character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_notes_tgt
+OWNER to postgres;
+
+-- Table: public.crm_tasks_tgt
+
+DROP TABLE IF EXISTS public.crm_tasks_tgt;
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks_tgt
+(
+task_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+
+mal text file
+lepot
+
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_events_tgt
+OWNER to postgres;
+
+-- Table: public.crm_notes_tgt
+
+DROP TABLE IF EXISTS public.crm_notes_tgt;
+
+CREATE TABLE IF NOT EXISTS public.crm_notes_tgt
+(
+note_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+created_by character varying(1000) COLLATE pg_catalog."default",
+date character varying(1000) COLLATE pg_catalog."default",
+note_content character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_notes_tgt
+OWNER to postgres;
+
+-- Table: public.crm_tasks_tgt
+
+DROP TABLE IF EXISTS public.crm_tasks_tgt;
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks_tgt
+(
+task_id character varying(1000) COLLATE pg_catalog."default",
+client_id character varying(1000) COLLATE pg_catalog."default",
+task_name character varying(1000) COLLATE pg_catalog."default",
+assigned_to character varying(1000) COLLATE pg_catalog."default",
+due_date character varying(1000) COLLATE pg_catalog."default",
+status character varying(1000) COLLATE pg_catalog."default",
+priority character varying(1000) COLLATE pg_catalog."default",
+description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_tasks_tgt
+OWNER to postgres;
+
+ormal text file
+
+CREATE TABLE IF NOT EXISTS public.crm_tasks_tgt
+(
+        task_id character varying(1000) COLLATE pg_catalog."default",
+        client_id character varying(1000) COLLATE pg_catalog."default",
+        task_name character varying(1000) COLLATE pg_catalog."default",
+        assigned_to character varying(1000) COLLATE pg_catalog."default",
+        due_date character varying(1000) COLLATE pg_catalog."default",
+        status character varying(1000) COLLATE pg_catalog."default",
+        priority character varying(1000) COLLATE pg_catalog."default",
+        description character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.crm_tasks_tgt
+OWNER to postgres;
+
+-- Table: public.recom_steps
+
+DROP TABLE IF EXISTS public.recom_steps;
+
+CREATE TABLE IF NOT EXISTS public.recom_steps
+(
+        client_id character varying(1000) COLLATE pg_catalog."default",
+        agent character varying(1000) COLLATE pg_catalog."default",
+        last_event_date character varying(1000) COLLATE pg_catalog."default",
+        combined_notes character varying(1000) COLLATE pg_catalog."default",
+        recommended_step character varying(1000) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.recom_steps
+OWNER to postgres;
+
+----------------insert/select scripts for recommendations-------------------
+insert into recom_steps
+WITH client_summary AS (
+        SELECT
+                t.client_id, assigned_to,
+                COUNT(t.task_id) AS total_tasks,
+                SUM(CASE WHEN t.status = 'Completed' THEN 1 ELSE 0 END) AS completed_tasks,
+                COUNT(n.note_id) AS total_notes,
+                COUNT(e.event_id) AS total_events,
+                MAX(e.date) AS last_event_date,
+                STRING_AGG(distinct n.note_content, '') AS combined_notes
+        FROM crm_tasks tgt t
+        LEFT JOIN crm_notes tgt n ON t.client_id = n.client_id
+        LEFT JOIN crm_events tgt e ON t.client_id = e.client_id
+        GROUP BY t.client_id, assigned_to
+)
+SELECT distinct
+        cs.client_id, assigned_to as Agent,
+        coalesce(cs.last_event_date, 'NA') as last_event_date,
+        coalesce(combined_notes, 'NA') as combined_notes,
+        CASE
+                WHEN cs.completed_tasks = 0 and combined_notes ilike '%Waiting for final confirmation%'
+                and combined_notes ilike '%Client received pre-approvals%'
+                THEN 'Follow-up with Bank for Loan approval!'
+                WHEN cs.completed_tasks = 0 and combined_notes ilike '%Sent listings for reviews%'
+                THEN 'Follow-up with Client for preference based on the property list shared'
+                WHEN cs.combined_notes ILIKE '%HOA fees%' then 'Property purchase completed, homeowners association fees details to'
+                WHEN cs.combined_notes ILIKE '%delay%' THEN 'Follow up with the client'
+                WHEN cs.total_events = 0 THEN 'No Events/No Notes, Start with an initial consultation'
+                WHEN cs.completed_tasks = cs.total_tasks THEN 'Move to the next stage'
+                ELSE 'Continue monitoring progress'
+        END AS Recommended_step
+FROM client_summary cs;
+
